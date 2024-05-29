@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'Nomads';
+  src: url('/assets/fonts/Nomads.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  letter-spacing: 10px;
+  font-size: 30px;
+  font-family: 'Nomads', sans-serif;
+}
+
+html, body {
+  margin: 0px;
+  background-color: #2F4F30;
+  color: white;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+  z-index: 9999;
+}
+
+.modal-contenido {
+  background-color: #333; /* Color de fondo del modal */
+  width: 300px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra en el modal */
+  border-radius: 10px;
+}
+
+#cerrarModal {
+  margin-top: 10px;
+  background-color: #ff4d4d; /* Color de fondo del botón */
+  color: #fff; /* Color de texto del botón */
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#cerrarModal:hover {
+  background-color: #e60000; /* Color de fondo del botón al pasar el cursor */
+}
+
+.titulo {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.carta {
+  position: relative;
+  width: 150px;
+  left: 100px;
+  margin-left: -75px;
+}
+
+#computadora-cartas, #jugador-cartas {
+  height: 240px;
+}
+
